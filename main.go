@@ -90,6 +90,8 @@ func addEvents() {
 	fmt.Println("--- Please press alt + q to enable macro        ---")
 	fmt.Println("---              alt + w to pause macro         ---")
 	fmt.Println("--- Add keys with +<key> and remove with -<key> ---")
+	fmt.Println("--- Example: +1<return> to add the 1 key        ---")
+	fmt.Println("---          -1<return> to remove the 1 key     ---")
 	fmt.Println("--- List current keys by pressing enter         ---")
 	fmt.Println("Current keys are:", keysToPressString())
 	hook.Register(hook.KeyDown, []string{"q", "alt"}, func(e hook.Event) {
